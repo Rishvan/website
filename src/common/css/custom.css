@@ -1,0 +1,15 @@
+.cardStyle{
+    @apply bg-gradient-to-br from-[#FFFFFF4D] to-[#6CA4D44D] backdrop-filter drop-shadow-md backdrop-blur-md  gap-1 ;
+}
+
+.backGround {
+    @apply h-screen bg-gray-800 bg-blend-multiply bg-cover;
+}
+
+body{
+    @apply backGround  bg-[url('/assets/bg.jpg')];
+}
+
+.t1-style{
+    @apply lg:text-sm 2xl:text-xl 
+}
