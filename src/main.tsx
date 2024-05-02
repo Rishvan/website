@@ -10,7 +10,7 @@ import Projects from './pages/project/Projects';
 const router = createBrowserRouter([
 
 {
-  path:"/website",
+  path:"/",
   element: <HomePage/>,
   errorElement : <ErrorPage/>
 },
