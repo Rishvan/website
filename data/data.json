@@ -1,0 +1,69 @@
+{
+  "name": "Rishvan M",
+  "designations": [
+    "Full Stack Developer",
+    "Backend Developer",
+    "Graphic Designer"
+  ],
+  "social_icons": [
+    {
+      "icon": "github",
+      "url": ""
+    },
+    {
+      "icon": "linkedin",
+      "url": ""
+    },
+    {
+      "icon": "instagram",
+      "url": ""
+    },
+    {
+      "icon": "whatsapp",
+      "url": "https://wa.me/+919895465354"
+    }
+  ],
+  "cards": [
+    {
+      "title": "Projects",
+      "description": "",
+      "url": "./project"
+    },
+    {
+      "title": "About Me",
+      "description": "",
+      "url": "./about"
+    },
+    {
+      "title": "Education",
+      "description": "",
+      "url": "./education"
+    }
+  ],
+  "projects": [
+    
+    {
+      "id" : 0,
+      "title": "Amal CS Hub",
+      "description": "test description",
+      "lagunages": ["Flutter", "laravel"],
+      "url": "amalCSHub"
+    },
+    {
+      "id" : 1,
+      "title": "Animal",
+      "description": "test description",
+      "lagunages": ["Parot", "Cock"],
+      "url": "animal"
+    },
+    {
+      "id" : 2,
+      "title": "Animal test",
+      "description": "sample description",
+      "lagunages": ["nice", "view"],
+      "url": "animal"
+    }
+    
+    
+  ]
+}
