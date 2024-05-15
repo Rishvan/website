@@ -1,9 +1,27 @@
+import { useDispatch, useSelector } from "react-redux";
 import dataJson from "../../../public/data/data.json";
-// import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { getProjects } from "../../redux/slice/projectSlice";
 
 const data: Portfolio = dataJson;
 
 function Projects() {
+const dispatch = useDispatch();
+const state : any = useSelector((state) => state);
+
+
+useEffect(()=>{
+  dispatch(getProjects() as any);
+},[])
+
+
+  
+
+  if(!state.project.data){
+    return <></>;
+  }
+
+
   return (
     <section className="font-mono backGround  bg-[url('assets/bg.jpg')] px-20 pt-12">
       <p className="text-white  text-3xl font-bold font-mono py-4 pb-8 items-center">
@@ -11,7 +29,7 @@ function Projects() {
       </p>
 
       <div className="w-full flex sm:flex-col sm:items-center gap-3 text-white pb-8">
-        {data.projects.map((item: Project, i) => {
+        {state?.project.data.data.data.map((item: Project, i :number) => {
           return (
             <div
               className="sm:w-full  sm:max-w-max  max-w-[300px] cardStyle rounded-lg p-3"
@@ -23,7 +41,7 @@ function Projects() {
                   <summary>{item.title}</summary>
                   <p>{item.description  ?? " "}</p>
                 </details>
-                  <p className="cardStyle bg-blue-900 rounded px-2">{item.lagunages + " "}</p>
+                  <p className="cardStyle bg-blue-900 rounded px-2">{item.languages?.join(",")}</p>
               </div>
             </div>
           );

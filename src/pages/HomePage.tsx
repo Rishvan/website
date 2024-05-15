@@ -39,7 +39,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        {/* <div className="p-2 pl-20 sm:px-8 flex gap-3 overflow-auto sm:flex-col">
+        <div className="p-2 pl-20 sm:px-8 flex gap-3 overflow-auto sm:flex-col">
           {data.cards.map((card: Cards, i) => {
             return (
               <>
@@ -53,7 +53,7 @@ export default function Home() {
               </>
             );
           })}
-        </div> */}
+        </div>
       </section>
     </>
   );

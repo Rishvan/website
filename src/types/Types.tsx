@@ -20,6 +20,6 @@ type Project = {
   id : number
   title : string
   description? : string
-  lagunages? : string[]
+  languages? : string[]
   url?:string
 }

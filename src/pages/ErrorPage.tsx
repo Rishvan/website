@@ -12,7 +12,7 @@ export default function ErrorPage(props:Props) {
        
         
         <p className="text-2xl">{ props.title ?? "404 Page Not Found !! "}</p>
-        <Link to="/website">
+        <Link to="/">
           <button className="cardStyle w-max rounded-xl flex flex-col justify-center items-center p-2 px-4">
             Go Back
           </button>
