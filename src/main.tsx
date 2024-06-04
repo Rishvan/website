@@ -1,24 +1,33 @@
 
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {createHashRouter,RouterProvider} from "react-router-dom";
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
 import './common/css/custom.css';
 import Projects from './pages/project/Projects';
 import { Provider } from 'react-redux';
 import {store} from "./redux/store"
+import Maintenancepage from './pages/components/MaintanancePage';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
 
 {
-  path:"/",
+  path:"/website",
   element: <HomePage/>,
   errorElement : <ErrorPage/>
 },
 {
-  path : "/project",
+  path : "website/project",
   element :<Projects/>
+},
+{
+  path : "website/maintenance",
+  element :<Maintenancepage/>
+},
+{
+  path : "*",
+  element :<ErrorPage/>
 }
 
 ]);

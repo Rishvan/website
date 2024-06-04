@@ -3,7 +3,7 @@
 }
 
 .backGround {
-    @apply h-screen bg-gray-800 bg-blend-multiply bg-cover;
+    @apply h-screen bg-gray-800 bg-blend-multiply bg-cover sm:bg-right-top bg-opacity-75;
 }
 
 body{
@@ -12,4 +12,15 @@ body{
 
 .t1-style{
     @apply lg:text-sm 2xl:text-xl 
+}
+
+.telescope-regular {
+    font-family: "Annie Use Your Telescope";
+    font-weight: 700;
+    
+}
+  
+
+.test-style-normal{
+    @apply telescope-regular text-xl leading-7 tracking-widest ; 
 }

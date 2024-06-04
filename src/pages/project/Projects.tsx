@@ -1,9 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import dataJson from "../../../public/data/data.json";
 import { useEffect } from "react";
 import { getProjects } from "../../redux/slice/projectSlice";
 
-const data: Portfolio = dataJson;
 
 function Projects() {
 const dispatch = useDispatch();

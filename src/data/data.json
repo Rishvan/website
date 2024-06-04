@@ -3,20 +3,20 @@
   "designations": [
     "Full Stack Developer",
     "Backend Developer",
-    "Graphic Designer"
+    "Flutter Developer"
   ],
   "social_icons": [
     {
       "icon": "github",
-      "url": ""
+      "url": "http://github.com/Rishvan"
     },
     {
       "icon": "linkedin",
-      "url": ""
+      "url": "http://linkedin.com/in/rishvan-m-8805a623a"
     },
     {
       "icon": "instagram",
-      "url": ""
+      "url": "https://www.instagram.com/r___van_"
     },
     {
       "icon": "whatsapp",
@@ -27,17 +27,17 @@
     {
       "title": "Projects",
       "description": "",
-      "url": "./project"
+      "url": "./website/maintenance"
     },
     {
       "title": "About Me",
       "description": "",
-      "url": "./about"
+      "url": "./website/maintenance"
     },
     {
       "title": "Education",
       "description": "",
-      "url": "./education"
+      "url": "./website/maintenance"
     }
   ],
   "projects": [
