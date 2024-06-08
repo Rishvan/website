@@ -1,5 +1,6 @@
 import dataJson from "../data/data.json";
 import { Link } from "react-router-dom";
+import _ from 'lodash';
 
 const data: Portfolio = dataJson;
 
@@ -8,7 +9,7 @@ export default function Home() {
     <>
       <section className="backGround test-style-normal bg-[url('assets/bg.jpg')]  ">
         <div className="text-white   flex gap-2 sm:gap-5 flex-col justify-end px-20 sm:px-4 h-2/4 sm:items-center lg:items-start">
-          <p className="sm:text-5xl lg:text-5xl silkscreen-regular ">{data.name ?? ""}</p>
+          <p className="sm:text-5xl lg:text-5xl silkscreen-regular ">{_.spl(data.name) ?? ""}</p>
 
           <ul className={"flex sm:flex-col sm:w-full sm:text-lg sm:items-center gap-6  sm:gap-0 pt-2"}>
             {data.designations.map((designation: string, i) => {

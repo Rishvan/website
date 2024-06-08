@@ -13,22 +13,22 @@ import Maintenancepage from './pages/components/MaintanancePage';
 const router = createBrowserRouter([
 
 {
-  path:"/website",
+  path:"/",
   element: <HomePage/>,
   errorElement : <ErrorPage/>
 },
 {
-  path : "website/project",
+  path : "project",
   element :<Projects/>
 },
 {
-  path : "website/maintenance",
+  path : "maintenance",
   element :<Maintenancepage/>
 },
-{
-  path : "*",
-  element :<ErrorPage/>
-}
+// {
+//   path : "*",
+//   element :<ErrorPage/>
+// }
 
 ]);
 
